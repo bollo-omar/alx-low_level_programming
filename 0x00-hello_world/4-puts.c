@@ -1,9 +1,9 @@
 #include<stdio.h>
 /**
- *main : program entry point
+ * main - Entry point for the program
  *
- *return : main method terminates with 0 forn success
- */
+ * Return: Exit with 0 (success)
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
