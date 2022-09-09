@@ -1,6 +1,4 @@
-#include <stdiguui::o.h>
-ioipiopimopimpomp
-
+#include <stdio.h>
 
 /**
  * main - entry point.
