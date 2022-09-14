@@ -1,4 +1,4 @@
-#define "main.h"
+#include "main.h"
 /**
  * _islower - a function that checks for lowercase character
  *
