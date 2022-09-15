@@ -24,7 +24,7 @@ void print_times_table(int n)
 
 				if ((d / (n + 1)) > 0)
 				{
-					_putchar((d / (n + 1) + '0');
+					_putchar((d / (n + 1)) + '0');
 				}
 				else
 				{
