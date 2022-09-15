@@ -17,7 +17,7 @@ int main(void)
 
 		i++;
 	}
-	(i < 1024)
+	while (i < 1024)
 	printf("%d\n", z);
 	return (0);
 }
