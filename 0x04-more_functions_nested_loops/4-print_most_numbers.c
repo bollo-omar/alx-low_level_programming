@@ -16,6 +16,7 @@ print_most_numbers(void)
 		{
 			_putchar(x + '0');
 		}
+		++x;
 	} while (x < 9);
 
 	_putchar('\n')
