@@ -12,7 +12,7 @@ print_most_numbers(void)
 
 	x = 0
 	do {
-		if (x != 2 && x != 2)
+		if (x != 2 || x != 2)
 		{
 			_putchar(x + '0');
 		}
