@@ -1,0 +1,19 @@
+#include "main.c"
+#include <stdio.h>
+/**
+ *  print_to_98 - prints natural numbers upto 98
+ * @n : n is the iterator
+ *  Return: Always 0 (Success)
+*/
+void print_to_98(int n)
+{
+	n = 0;
+
+	while (n < 98)
+		_putchar(n);
+		_putchar(',');
+		_putchar(' ');
+		++n;
+	}
+	return (0);
+}
