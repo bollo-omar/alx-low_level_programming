@@ -7,13 +7,13 @@
 */
 void print_to_98(int n)
 {
-	n = 0;
+	int i;
 
-	while (n < 98)
+	for (i = 0; i < n; i++)
 	{
-		_putchar((n % 10) + '0');
-		_putchar(',');
-		_putchar(' ');
-		++n;
+		printf("%d", (i + 1));
+		if (i < (n - 1))
+			_putchar(',');
+			_putchar(' ');
 	}
 }
