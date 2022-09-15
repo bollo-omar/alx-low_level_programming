@@ -11,11 +11,10 @@ void print_to_98(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", (i + 1));
-		if (i < (n - 1))
+		printf("%d ", (i + 1));
+		if (i < n)
 		{
 			_putchar(',');
-			_putchar(' ');
 		}
 	}
 }
