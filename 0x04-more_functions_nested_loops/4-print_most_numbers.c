@@ -6,18 +6,17 @@
  * Return: always 0
  */
 
-print_most_numbers(void)
+void print_most_numbers(void)
 {
 	int x;
 
-	x = 0
-	do {
+	for (x = 0;  x <= 9; x++)
+	{
 		if (x != 2 || x != 4)
 		{
 			_putchar(x + '0');
 		}
-		++x;
-	} while (x < 9);
+	}
 
 	_putchar('\n')
 }
