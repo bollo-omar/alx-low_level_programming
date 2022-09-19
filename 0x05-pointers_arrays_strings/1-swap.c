@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
- * swap_int - swap values of two intergers
+ * swap_int - swap values from two integers
  *
- * @a: param a
- * @b: param b
+ * @a: param
+ * @b: param
  *
- * Return: no return value(void method)
- */
+ * Return: void(no return type
+*/
 
 void swap_int(int *a, int *b)
 {
 	int num;
+	int num2;
 
 	num = *a;
-	*b = *b;
-	*b = num;
+	num2 = *b;
+
+	*a = num + num2;
+	*b = num - num2;
+	*a = num - num2;
 }
