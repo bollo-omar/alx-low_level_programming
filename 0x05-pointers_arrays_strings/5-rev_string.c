@@ -13,8 +13,9 @@ void rev_string(char *s)
 	int i = 0;
 	int j;
 	int t;
+	char myArr[] = *s;
 
-	for (; *s[i] - 1; i++)
+	for (; myArr[i] - 1; i++)
 	{
 		++i;
 	}
@@ -23,6 +24,6 @@ void rev_string(char *s)
 
 	for (j = t - 1; j >= 0; j++)
 	{
-		_putchar(*s[j]);
+		myArr[j];
 	}
 }
