@@ -11,19 +11,22 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	int j;
-	int t;
-	char myArr[] = *s;
+	int j = 0;
+	int t = 0;
+	char tmp;
 
-	for (; myArr[i] - 1; i++)
+	for (; s[i] != '\0'; i++)
 	{
-		++i;
+
 	}
 
-	t = i;
+	t = i - 1;
 
-	for (j = t - 1; j >= 0; j++)
+	for (j = 0; j < i / 2; j++)
 	{
-		myArr[j];
+		tmp = s[j];
+		s[j] = s[t];
+		s[t--] = tmp;
 	}
+
 }
