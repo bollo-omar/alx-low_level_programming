@@ -3,22 +3,30 @@
 /**
  * _strcat - funcction to concatinate two strings
  *
- * @dest: param
- * @src: param
+ * @dest: param destination
+ * @src: param source
  *
- * Return: retun char
+ * Return: return dest
 */
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
+	int i;
+	int j;
 
-	len = 0;
+	j = 0;
+	i = 0;
 
-	while (dest[i++])
-		len++;
-	for (i = 0; src[i]; i++)
-		dest[len++] = src[i];
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+	dest[i] = '\0';
 
 	return (dest);
 }
