@@ -3,24 +3,28 @@
 /**
  * leet - encodes a string to  1337
  *
- * @str: param to be encoded
+ * @s: param to be encoded
  *
- * Return: str
+ * Return: s
 */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	int index1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int a, b;
 
-	while (str[++index1])
+	char nose[] = "aeotl";
+	char nose1[] = "AEOTL";
+	char res[] = "43071";
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		for (b = 0; nose[b] !=  '\0' && nose1[b] != '\0'; b++)
 		{
-			if (str[index1] == leet[index2] ||
-			 str[index1] - 32 == leet[index2])
-				str[index1] = index2 + '0';
+			if (s[a] == nose[b] || s[a] == nose1[b])
+			{
+				s[a] = res[b];
+			}
 		}
 	}
-	return (str);
+	return (s);
 }
