@@ -3,10 +3,10 @@
 /**
  * _strchr - function that locates a character in a string
  *
- *@s: param s
- *@c: param c
+ * @s: param s
+ * @c: param c
  *
- *Return: pointer to c
+ * Return: pointer to c
 */
 
 char *_strchr(char *s, char c)
@@ -24,5 +24,6 @@ char *_strchr(char *s, char c)
 	{
 		return (s);
 	}
+
 	return (s);
 }
