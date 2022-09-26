@@ -6,30 +6,29 @@
  * @haystack: param
  * @needle: parama
  *
- * Return: return a pointer to the beginning of the located substring, or NULL
+ * Return: return a pointer to the beginning of the located substring, or null
 */
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *input = haystack;
-	char *sub = needle;
+	unsigned int i = 0, j = 0;
 
-	while (*haystack)
+	while (haystack[i])
 	{
-		while (*needle)
+		while (needle[j] && (haystack[i] == needle[0]))
 		{
-			if (*haystack++ != *needle++)
-			{
+			if (haystack[i + j] == needle[j])
+				j++;
+			else
 				break;
-			}
 		}
-		if (!*needle)
+		if (needle[j])
 		{
-			return (input);
+			i++;
+			j = 0;
 		}
-		needle = sub;
-		input++;
-		haystack = input;
+		else
+			return (haystack + i);
 	}
 	return (0);
 }
