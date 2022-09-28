@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _prime - returns 1 if no. is prime
  *
