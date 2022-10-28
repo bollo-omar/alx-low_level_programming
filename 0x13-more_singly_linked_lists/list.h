@@ -24,7 +24,8 @@ typedef struct listint_s
  * @next: points to the next node
  *
  * Description: singly linked list of pointers
- */
+*/
+
 typedef struct listp_s
 {
 	void *p;
